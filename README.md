@@ -97,24 +97,9 @@ Fourier-KAGAT consists of:
 3. **Graph pooling**: Aggregate node features to graph-level representation
 4. **Output layer**: Final prediction with KAN transformations
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```
-@article{peivaste2024fourierkagat,
-  title={Fourier-KAGAT: Fourier-based Kolmogorov-Arnold Graph Attention Network for Molecular Property Prediction},
-  author={Peivaste, Iman},
-  journal={Journal Name},
-  year={2024}
-}
-```
-
-## License
-
-[Specify your license here]
 
 ## Contact
 
-For questions or issues, please contact Iman Peivaste.
+For questions or issues, please contact Iman Peivaste. 
+iman.peivaste@list.lu
 
