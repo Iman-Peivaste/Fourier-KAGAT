@@ -1,0 +1,39 @@
+# Fourier-KAGAT Configuration File
+# Author: Iman Peivaste
+
+# Model selection (use "kagat" for Fourier-KAGAT)
+model_select: "kagat"
+
+# Dataset selection
+select_dataset: 'her'
+
+# Force field for 3D conformer generation
+force_field: 'uff'
+
+# Feature encoders
+encoder_atom: "cgcnn"  # CGCNN encoding: 92 dimensions
+encoder_bond: "dim_14"  # Bond encoding: 21 dimensions
+
+# Graph pooling method: 'avg', 'max', or 'sum'
+pooling: 'avg'
+
+# Loss function: 'bce', 'l1', 'l2', or 'sml1'
+loss_sclect: 'bce'
+
+# Model hyperparameters
+grid: 3          # KAN grid size (Fourier basis functions)
+head: 2          # Number of attention heads
+num_layers: 2    # Number of GAT-KAN layers
+
+# Training hyperparameters
+LR: 0.0001       # Learning rate
+NUM_EPOCHS: 250  # Number of training epochs
+batch_size: 64   # Batch size
+
+# Data splitting ratios
+train_ratio: 0.8
+vali_ratio: 0.1
+test_ratio: 0.1
+
+# Number of training iterations (for multiple runs)
+iter: 1
